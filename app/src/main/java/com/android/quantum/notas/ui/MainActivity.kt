@@ -139,8 +139,6 @@ class MainActivity : BaseActivity(), NoteRecyclerAdapter.Interaction {
 
             else -> super.onOptionsItemSelected(item)
         }
-
-
     }
 
     override fun onItemSelected(position: Int, nota: Nota) {

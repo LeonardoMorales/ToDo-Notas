@@ -34,6 +34,8 @@ dependencies {
 
     def room_version = "2.2.3"
     def material_version = "1.0.0"
+    def coroutines_version = "1.2.1"
+    def materialDiaglos_version = "3.1.1"
 
     // Room
     implementation "androidx.room:room-runtime:$room_version"
@@ -41,12 +43,12 @@ dependencies {
     kapt "androidx.room:room-compiler:$room_version"
 
     // Coroutines
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
 
     // Material Design
     implementation "com.google.android.material:material:$material_version"
 
     // Material Dialog
-    implementation 'com.afollestad.material-dialogs:core:3.1.1'
+    implementation "com.afollestad.material-dialogs:core:$materialDiaglos_version"
 
 }

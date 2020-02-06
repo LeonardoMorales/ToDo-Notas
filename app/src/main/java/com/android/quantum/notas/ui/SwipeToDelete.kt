@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.android.quantum.notas.models.Nota
 import com.android.quantum.notas.persistance.NotaDatabase
 import com.android.quantum.notas.ui.adapter.NoteRecyclerAdapter
+import com.android.quantum.notas.utils.showToast
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
@@ -29,6 +30,6 @@ class SwipeToDelete(var adapter: NoteRecyclerAdapter, var context: Context): Ite
                 NotaDatabase(it).getNotaDao().eliminar(nota)
             }
         }
-
+        context.showToast("Nota eliminada")
     }
 }
